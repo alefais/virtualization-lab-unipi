@@ -31,6 +31,6 @@ In order to run the examples, you first need to install the following dependenci
 
 ### Docker
 
-* Execute the application by running the script `run.sh` inside the [simple-docker-app](https://github.com/alefais/virtualization-lab-unipi/simple-docker-app) exercise folder.
+* Execute the application by running the script `run.sh` inside the [simple-docker-app](https://github.com/alefais/virtualization-lab-unipi/tree/main/simple-docker-app) exercise folder.
 
-* Execute the application by running the script `run.sh` inside the [composed-docker-app](https://github.com/alefais/virtualization-lab-unipi/composed-docker-app) exercise folder. You can access the application from your browser at `http://localhost:4001`. You can stop the application and remove the created containers by running the script `stop.sh` in the same folder.
+* Execute the application by running the script `run.sh` inside the [composed-docker-app](https://github.com/alefais/virtualization-lab-unipi/tree/main/composed-docker-app) exercise folder. You can access the application from your browser at `http://localhost:4001`. You can stop the application and remove the created containers by running the script `stop.sh` in the same folder.
