@@ -7,7 +7,7 @@ services:
             - "6379:6379"
         command: --appendonly yes
         volumes:
-            -  redis-db-data:/data #/var/lib/redis/data
+            -  redis-db-data:/data
     node-web-app:
         build: .
         ports:
