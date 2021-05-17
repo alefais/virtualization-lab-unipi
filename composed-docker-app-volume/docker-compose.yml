@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    redis-db:
+        image: redis
+        ports: 
+            - "6379:6379"
+        command: --appendonly yes
+        volumes:
+            -  redis-db-data:/data #/var/lib/redis/data
+    node-web-app:
+        build: .
+        ports:
+            - "4001:8081"
+volumes:
+    redis-db-data:
+        external:
+            name: composed-docker-app-volume_redis-db-data
