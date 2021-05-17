@@ -34,3 +34,6 @@ In order to run the examples, you first need to install the following dependenci
 * Execute the application by running the script `run.sh` inside the [simple-docker-app](https://github.com/alefais/virtualization-lab-unipi/tree/main/simple-docker-app) exercise folder.
 
 * Execute the application by running the script `run.sh` inside the [composed-docker-app](https://github.com/alefais/virtualization-lab-unipi/tree/main/composed-docker-app) exercise folder. You can access the application from your browser at `http://localhost:4001`. You can stop the application and remove the created containers by running the script `stop.sh` in the same folder.
+
+* Execute the application by first creating a Docker volume as
+`docker volume create --name=composed-docker-app-volume_redis-db-data`, and then running the script `run.sh` inside the [composed-docker-app-volume](https://github.com/alefais/virtualization-lab-unipi/tree/main/composed-docker-app-volume) exercise folder. You can access the application from your browser at `http://localhost:4001`. You can stop the application and remove the created containers by running the script `stop_and_remove.sh` in the same folder. If you run the application again, the last value of the `visits` counter will be retrieved from the volume, where it has been permanently stored during the previous execution.
