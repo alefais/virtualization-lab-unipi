@@ -1,9 +1,10 @@
 [![Release](https://img.shields.io/github/v/release/alefais/virtualization-lab-unipi?label=Release)](https://github.com/alefais/virtualization-lab-unipi/releases/latest)
 [![Last commit](https://img.shields.io/github/last-commit/alefais/virtualization-lab-unipi/main?label=Last%20commit)](https://github.com/alefais/virtualization-lab-unipi/main)
 
-# Virtualization Lab, Wireless Networks Course, University of Pisa
+# Virtualization Lab, Wireless Networks Course, Università di Pisa
 
-This repository contains some code examples proposed during the laboratory part of the course Wireless Networks (cod. 918II) at the University of Pisa.
+This repository contains some code examples I proposed as Teaching Assistant during the laboratory part of the course Wireless Networks (cod. 918II) at Università di Pisa, in the academic years from 2019/2020 to 2021/2022. In the academic years 2019/2020 and 2020/2021, the laboratory lectures were shared with the course "Progetto di Reti Wireless e Servizi Multimediali" (cod. 558II) at Università di Pisa. Also, in the academic year 2021/2022, the laboratory was shared with the course "Wireless Network Design" (cod. 1041I) at Università di Pisa. This laboraotry course targets students attending the Master Degree in Computer Science and Networking and the Master Degree in Telecommunication Engineering at Università di Pisa.
+
 
 ## Relevant topics
 
