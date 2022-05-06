@@ -1,0 +1,6 @@
+.vagrant
+Vagrantfile
+composed-docker-app/node_modules
+composed-docker-app/package-lock.json
+composed-docker-app-volume/node_modules
+composed-docker-app-volume/package-lock.json
