@@ -1,3 +1,6 @@
+[![Release](https://img.shields.io/github/v/release/alefais/virtualization-lab-unipi?label=Release)](https://github.com/alefais/virtualization-lab-unipi/releases/latest)
+[![Last commit](https://img.shields.io/github/last-commit/alefais/virtualization-lab-unipi/main?label=Last%20commit)](https://github.com/alefais/virtualization-lab-unipi/main)
+
 # Virtualization Lab, Wireless Networks Course, University of Pisa
 
 This repository contains some code examples proposed during the laboratory part of the course Wireless Networks (cod. 918II) at the University of Pisa.
