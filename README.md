@@ -8,9 +8,9 @@ This repository contains some code examples I proposed as Teaching Assistant dur
 
 ## Relevant topics
 
-Relevant topics proposed in this part of the course are: Software Defined Networking (SDN), Network Function Virtualization (NFV), Multi-Access Edge Computing (MEC), Cloud and Edge computing, Service-Oriented Architectures (SOA), virtualization approaches (hypervisors, virtual machines (VMs), containers), RedHat OpenStack, Oracle VM VirtualBox, Docker, Kubernetes.
+Relevant topics proposed are: Software Defined Networking (SDN), Network Function Virtualization (NFV), Multi-Access Edge Computing (MEC), Cloud and Edge computing, Service-Oriented Architectures (SOA), virtualization approaches (hypervisors, virtual machines (VMs), containers), RedHat OpenStack, Oracle VM VirtualBox, Docker, Kubernetes.
 
-The most updated version of the course material can be found at [Wireless Networks (2020/2021)](http://for.unipi.it/alessandra_fais/teaching/), in the *Teaching* section of my web page.
+The most updated version of the course material can be found at [Wireless Network Design (2021/2022)](http://for.unipi.it/alessandra_fais/teaching/), in the *Teaching* section of my web page.
 
 ## Dependencies
 
