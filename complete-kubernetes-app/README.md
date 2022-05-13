@@ -54,12 +54,11 @@ $ kubectl describe service mongoexpress-service
 $ kubectl describe pod mongodb-deployment-xxxxxx
 
 $ kubectl logs mongo-express-xxxxxx
-
-$ kubectl get deployment mongodb-deployment -o yaml > mongodb-deployment-result.yaml
-$ kubectl get deployment mongoexpress-deployment -o yaml > mongodb-service-result.yaml
 ```
 
-### Use the following command to give a URL to external service in ```minikube```
+## Configure the URL of the external service
+
+### Use the following command to assign a URL to the external service in ```minikube```
 
 ```
 $ minikube service --url mongo-express-service
