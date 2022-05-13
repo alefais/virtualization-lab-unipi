@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"name":"mongodb-service","namespace":"default"},"spec":{"ports":[{"port":27017,"protocol":"TCP","targetPort":27017}],"selector":{"app":"mongodb"}}}
+  creationTimestamp: "2022-05-12T11:18:08Z"
+  name: mongodb-service
+  namespace: default
+  resourceVersion: "12369"
+  uid: a551adfc-2639-4068-8a20-ef3f11c48f01
+spec:
+  clusterIP: 10.110.121.98
+  clusterIPs:
+  - 10.110.121.98
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
+  selector:
+    app: mongodb
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

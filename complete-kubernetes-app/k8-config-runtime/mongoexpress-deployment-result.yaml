@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"labels":{"app":"mongo-express"},"name":"mongo-express","namespace":"default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"mongo-express"}},"template":{"metadata":{"labels":{"app":"mongo-express"}},"spec":{"containers":[{"env":[{"name":"ME_CONFIG_MONGODB_ADMINUSERNAME","valueFrom":{"secretKeyRef":{"key":"mongo-root-username","name":"mongodb-secret"}}},{"name":"ME_CONFIG_MONGODB_ADMINPASSWORD","valueFrom":{"secretKeyRef":{"key":"mongo-root-password","name":"mongodb-secret"}}},{"name":"ME_CONFIG_MONGODB_SERVER","valueFrom":{"configMapKeyRef":{"key":"database_url","name":"mongodb-configmap"}}}],"image":"mongo-express","name":"mongo-express","ports":[{"containerPort":8081}]}]}}}}
+  creationTimestamp: "2022-05-12T11:30:46Z"
+  generation: 1
+  labels:
+    app: mongo-express
+  name: mongo-express
+  namespace: default
+  resourceVersion: "12926"
+  uid: 2d46e40a-3d28-4e25-8d9e-1a782aaca36f
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: mongo-express
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mongo-express
+    spec:
+      containers:
+      - env:
+        - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+          valueFrom:
+            secretKeyRef:
+              key: mongo-root-username
+              name: mongodb-secret
+        - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: mongo-root-password
+              name: mongodb-secret
+        - name: ME_CONFIG_MONGODB_SERVER
+          valueFrom:
+            configMapKeyRef:
+              key: database_url
+              name: mongodb-configmap
+        image: mongo-express
+        imagePullPolicy: Always
+        name: mongo-express
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2022-05-12T11:30:49Z"
+    lastUpdateTime: "2022-05-12T11:30:49Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2022-05-12T11:30:46Z"
+    lastUpdateTime: "2022-05-12T11:30:49Z"
+    message: ReplicaSet "mongo-express-68c4748bd6" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1

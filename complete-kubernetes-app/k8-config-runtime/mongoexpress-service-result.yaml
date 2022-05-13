@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"name":"mongo-express-service","namespace":"default"},"spec":{"ports":[{"nodePort":30000,"port":8081,"protocol":"TCP","targetPort":8081}],"selector":{"app":"mongo-express"},"type":"LoadBalancer"}}
+  creationTimestamp: "2022-05-12T11:33:21Z"
+  name: mongo-express-service
+  namespace: default
+  resourceVersion: "13035"
+  uid: 2325831f-903f-4bfb-9692-6935cb06bc8d
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.111.144.104
+  clusterIPs:
+  - 10.111.144.104
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 30000
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    app: mongo-express
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
